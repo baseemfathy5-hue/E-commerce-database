@@ -60,3 +60,6 @@ avg_age_customer	📆 Average age of customers per registration type
 ⚙️ Scalable: New SPs or Views can be added easily for further analysis
 
 📊 Dashboard-ready: Data is structured for Excel, Power BI, or other visualization tools
+
+## 🗄️ Database ERD
+![Database ERD](DB%20ERD.jpg)
