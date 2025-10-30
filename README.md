@@ -1,80 +1,62 @@
-📊 YouTube Channels & Videos Performance Dashboard
+🗄️ Supermarket Data Analytics Project
+💡 Project Overview
 
-An interactive Power BI dashboard analyzing YouTube channels and video performance metrics.
-The report highlights total views, likes, comments, dislikes, and engagement distribution across channels, countries, and years.
+This project demonstrates a data-driven analytics system for a local supermarket using SQL Server.
 
-📷 Dashboard Preview
+The project includes:
 
-YouTube Channels & Videos Performance Dashboard
+📝 Stored Procedures (SPs) for managing orders, customers, and products
 
-🚀 Overview
+📊 Views to analyze sales, top-selling and low-selling products, seller performance, and customer statistics
 
-This dashboard provides valuable insights into YouTube performance analytics, including:
+The focus is on extracting insights from raw sales data to support decision-making and reporting.
 
-Total Views, Likes, Comments, and Dislikes
+🎯 Key Benefits of the Database & Views
 
-Engagement trends by month and year
+🏆 Identify top & low-selling products → Helps manage inventory and make marketing decisions
 
-Top-performing videos and channels
+📈 Analyze seller performance → Recognize top performers and allocate resources effectively
 
-Country-wise engagement distribution
+👥 Customer insights → Track customer types, loyalty points, and average age
 
-Channel comparison by dislikes and total engagement
+🌍 Category & region analysis → Understand which categories and regions generate the most sales or profit
 
-## 📷 Dashboard Preview
-![YouTube Performance Dashboard](youtube.png)
+🔄 Audit & stock control → Automatically track price changes and stock levels using Triggers
 
-📈 Key Metrics
+🛠️ Key SQL Components
+📝 Stored Procedures
+SP Name	Purpose
+SP_Create_Full_Order	🛒 Create complete customer orders with details
+addnewcustomer	👤 Add a new customer
+searchproductsbynameorid	🔍 Search products by name or ID
+Update_Prices_by_categories	💰 Update product prices based on category rules
+sp_get_orders	📄 Retrieve orders with pagination
+📊 Views
+View Name	Purpose
+high_price_category	💎 Shows the highest-priced product per category
+high_Products_sales	🔝 Best-selling products per category
+vBestSeller	🏅 Product with highest quantity sold
+vTopSales	💵 Orders with highest total price
+vLessSeller	⚠️ Product with lowest quantity sold
+seller_has_top_target	🥇 Top seller by total sales
+sellers_region	🌍 Sellers with their warehouse region
+customer_type	👥 Count of customers by registration type
+LoyaltyPointsByCategory	🎁 Total loyalty points per category
+avg_age_customer	📆 Average age of customers per registration type
+⚡ Triggers & Audit
 
-Total Views: 391B
+💹 Track price changes automatically (tri_updateproductprice)
 
-Total Videos: 56K
+📦 Update stock levels after orders (trg_check_StockLevel)
 
-Total Channels: 12K
+📝 Maintain audit records for price changes
 
-Total Likes: 11B
+🚀 Key Takeaways
 
-Total Comments: 1B
+🧠 Better business decisions: Use Views to identify top/bottom performers, sales trends, and customer insights
 
-Total Dislikes: 564M
+🔄 Automation: Triggers reduce manual updates and errors
 
-📊 Visual Components
+⚙️ Scalable: New SPs or Views can be added easily for further analysis
 
-Top 10 Videos by Views: Horizontal bar chart of the most viewed videos
-
-Total Views by Month: Line chart showing monthly trending views
-
-Total Videos by Year: Donut chart comparing content production across years
-
-Channels by Engagement: Bar chart ranking channels by likes and comments
-
-Countries by Engagement: Map visual highlighting regional performance
-
-Top 10 Channels by Dislikes: Bar chart showing audience sentiment
-
-🧰 Tools and Technologies Used
-
-Microsoft Power BI
-
-DAX (Data Analysis Expressions)
-
-YouTube Analytics Dataset
-
-Microsoft Excel / SQL Server (for data transformation)
-
-📈 Future Enhancements
-
-Add filters by year, region, and channel category
-
-Include subscriber growth and watch time metrics
-
-Integrate sentiment analysis for comments
-
-Automate data refresh using YouTube API
-
-👤 Author
-
-Bassem Fathy – Data Analyst
-📧 Baseemfathy5@gmail.com
-
-🔗 LinkedIn
+📊 Dashboard-ready: Data is structured for Excel, Power BI, or other visualization tools
